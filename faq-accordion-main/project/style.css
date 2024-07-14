@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'WorkSans-Regular';
+    src: url(assets/fonts/static/WorkSans-Regular.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'WorkSans-Bold';
+    src: url(assets/fonts/static/WorkSans-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'WorkSans-SemiBold';
+    src: url(assets/fonts/static/WorkSans-SemiBold.ttf);
+    font-weight: 600;
+}
+
+:root{
+    --cor1: hsl(275, 100%, 97%);
+    --cor2: hsl(292, 16%, 49%);
+    --cor3: hsl(292, 42%, 14%);
+    
+    --font-Regular: 'WorkSans-Regular',Arial,sans-serif;
+    --font-Bold: 'WorkSans-Bold',Arial,sans-serif;
+    --font-SemiBold: 'WorkSans-SemiBold',Arial,sans-serif;
+}
+
+body{
+    background-image: url(assets/images/background-pattern-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--cor1);
+    font-family: var(--font-Regular);
+    color: var(--cor3);
+}
+main{
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    margin-top: 80px;
+    border-radius: 15px;
+    padding: 40px;
+}
+#title{
+    display: flex;
+}
+#title h1{
+    font-family: var(--font-Bold);
+    font-size: 2.5em;
+    padding-left: 20px;
+}
+.questions-container h2{
+    font-size: 1em;
+}
+p{
+    display: none;
+}
+
+.attribution {
+     font-size: 11px; text-align: center; 
+     margin-top: 10px;
+}
+.attribution a {
+     color: hsl(228, 45%, 44%);
+}
