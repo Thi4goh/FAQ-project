@@ -35,7 +35,8 @@ body{
 }
 main{
     background-color: white;
-    width: 500px;
+    max-width: 500px;
+    min-width: 10px;
     height: 500px;
     margin: auto;
     margin-top: 80px;
@@ -49,12 +50,25 @@ main{
     font-family: var(--font-Bold);
     font-size: 2.5em;
     padding-left: 20px;
+    
 }
-.questions-container h2{
+.container h2{
     font-size: 1em;
 }
+.question{
+    display: flex;
+    justify-content: space-between;
+}
 p{
+    color: var(--cor2);
     display: none;
+    padding-bottom: 20px;
+    text-align: justify;
+    
+}
+hr{
+    border: none;
+    border-top: 2px solid rgba(158, 158, 158, 0.11);
 }
 
 .attribution {
